@@ -1,0 +1,364 @@
+/* Font
+-----------------------------------------------------------------------------------------------------------*/
+html {
+	font-size: 100%;
+}
+body,
+input,
+select,
+textarea,
+button,
+.ui-btn {
+	font-size: 1em;
+	line-height: 1.3;
+	  font-family: sans-serif /*{global-font-family}*/;
+}
+legend,
+.ui-input-text input,
+.ui-input-search input {
+	color: inherit;
+	text-shadow: inherit;
+}
+/* Form labels (overrides font-weight bold in bars, and mini font-size) */
+.ui-mobile label,
+div.ui-controlgroup-label {
+	font-weight: normal;
+	font-size: 16px;
+}
+/* Separators
+-----------------------------------------------------------------------------------------------------------*/
+/* Field contain separator (< 28em) */
+.ui-field-contain {
+	border-bottom-color: #828282;
+	border-bottom-color: rgba(0,0,0,.15);
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+/* Table opt-in classes: strokes between each row, and alternating row stripes */
+/* Classes table-stroke and table-stripe are deprecated in 1.4. */
+.table-stroke thead th,
+.table-stripe thead th,
+.table-stripe tbody tr:last-child {
+	border-bottom: 1px solid #d6d6d6; /* non-RGBA fallback */
+	border-bottom: 1px solid rgba(0,0,0,.1);
+}
+.table-stroke tbody th,
+.table-stroke tbody td {
+	border-bottom: 1px solid #e6e6e6; /* non-RGBA fallback  */
+	border-bottom: 1px solid rgba(0,0,0,.05);
+}
+.table-stripe.table-stroke tbody tr:last-child th,
+.table-stripe.table-stroke tbody tr:last-child td {
+	border-bottom: 0;
+}
+.table-stripe tbody tr:nth-child(odd) td,
+.table-stripe tbody tr:nth-child(odd) th {
+	background-color: #eeeeee; /* non-RGBA fallback  */
+	background-color: rgba(0,0,0,.04);
+}
+/* Buttons
+-----------------------------------------------------------------------------------------------------------*/
+.ui-btn,
+label.ui-btn {
+	font-weight: bold;
+	border-width: 1px;
+	border-style: solid;
+}
+.ui-btn:link {
+	text-decoration: none !important;
+}
+.ui-btn-active {
+	cursor: pointer;
+}
+/* Corner rounding
+-----------------------------------------------------------------------------------------------------------*/
+/* Class ui-btn-corner-all deprecated in 1.4 */
+.ui-corner-all {
+	-webkit-border-radius: .6em /*{global-radii-blocks}*/;
+	border-radius: .6em /*{global-radii-blocks}*/;
+}
+/* Buttons */
+.ui-btn-corner-all,
+.ui-btn.ui-corner-all,
+/* Slider track */
+.ui-slider-track.ui-corner-all,
+/* Flipswitch */
+.ui-flipswitch.ui-corner-all,
+/* Count bubble */
+.ui-li-count {
+	-webkit-border-radius: .3125em /*{global-radii-buttons}*/;
+	border-radius: .3125em /*{global-radii-buttons}*/;
+}
+/* Icon-only buttons */
+.ui-btn-icon-notext.ui-btn-corner-all,
+.ui-btn-icon-notext.ui-corner-all {
+	-webkit-border-radius: 1em;
+	border-radius: 1em;
+}
+/* Radius clip workaround for cleaning up corner trapping */
+.ui-btn-corner-all,
+.ui-corner-all {
+	-webkit-background-clip: padding;
+	background-clip: padding-box;
+}
+/* Popup arrow */
+.ui-popup.ui-corner-all > .ui-popup-arrow-guide {
+	left: .6em /*{global-radii-blocks}*/;
+	right: .6em /*{global-radii-blocks}*/;
+	top: .6em /*{global-radii-blocks}*/;
+	bottom: .6em /*{global-radii-blocks}*/;
+}
+/* Shadow
+-----------------------------------------------------------------------------------------------------------*/
+.ui-shadow {
+	-webkit-box-shadow: 0 1px 3px /*{global-box-shadow-size}*/ rgba(0,0,0,.2) /*{global-box-shadow-color}*/;
+	-moz-box-shadow: 0 1px 3px /*{global-box-shadow-size}*/ rgba(0,0,0,.2) /*{global-box-shadow-color}*/;
+	box-shadow: 0 1px 3px /*{global-box-shadow-size}*/ rgba(0,0,0,.2) /*{global-box-shadow-color}*/;
+}
+.ui-shadow-inset {
+	-webkit-box-shadow: inset 0 1px 3px /*{global-box-shadow-size}*/ rgba(0,0,0,.2) /*{global-box-shadow-color}*/;
+	-moz-box-shadow: inset 0 1px 3px /*{global-box-shadow-size}*/ rgba(0,0,0,.2) /*{global-box-shadow-color}*/;
+	box-shadow: inset 0 1px 3px /*{global-box-shadow-size}*/ rgba(0,0,0,.2) /*{global-box-shadow-color}*/;
+}
+.ui-overlay-shadow {
+	-webkit-box-shadow: 0 0 12px 		rgba(0,0,0,.6);
+	-moz-box-shadow: 0 0 12px 			rgba(0,0,0,.6);
+	box-shadow: 0 0 12px 				rgba(0,0,0,.6);
+}
+/* Icons
+-----------------------------------------------------------------------------------------------------------*/
+.ui-btn-icon-left:after,
+.ui-btn-icon-right:after,
+.ui-btn-icon-top:after,
+.ui-btn-icon-bottom:after,
+.ui-btn-icon-notext:after {
+	background-color: #666666 /*{global-icon-color}*/;
+	background-color: rgba(0,0,0,.3) /*{global-icon-disc}*/;
+	background-position: center center;
+	background-repeat: no-repeat;
+	-webkit-border-radius: 1em;
+	border-radius: 1em;
+}
+/* Alt icons */
+.ui-alt-icon.ui-btn:after,
+.ui-alt-icon .ui-btn:after,
+html .ui-alt-icon.ui-checkbox-off:after,
+html .ui-alt-icon.ui-radio-off:after,
+html .ui-alt-icon .ui-checkbox-off:after,
+html .ui-alt-icon .ui-radio-off:after {
+	background-color: #666666 /*{global-icon-color}*/;
+	background-color: 					rgba(0,0,0,.15);
+}
+/* No disc */
+.ui-nodisc-icon.ui-btn:after,
+.ui-nodisc-icon .ui-btn:after {
+	background-color: transparent;
+}
+/* Icon shadow */
+.ui-shadow-icon.ui-btn:after,
+.ui-shadow-icon .ui-btn:after {
+	-webkit-box-shadow: 0 1px 0 rgba(255,255,255,.3) /*{global-icon-shadow}*/;
+	-moz-box-shadow: 0 1px 0 rgba(255,255,255,.3) /*{global-icon-shadow}*/;
+	box-shadow: 0 1px 0 rgba(255,255,255,.3) /*{global-icon-shadow}*/;
+}
+/* Checkbox and radio */
+.ui-btn.ui-checkbox-off:after,
+.ui-btn.ui-checkbox-on:after,
+.ui-btn.ui-radio-off:after,
+.ui-btn.ui-radio-on:after {
+	display: block;
+	width: 18px;
+	height: 18px;
+	margin: -9px 2px 0 2px;
+}
+.ui-checkbox-off:after,
+.ui-btn.ui-radio-off:after {
+	filter: Alpha(Opacity=30);
+	opacity: .3;
+}
+.ui-btn.ui-checkbox-off:after,
+.ui-btn.ui-checkbox-on:after {
+	-webkit-border-radius: .1875em;
+	border-radius: .1875em;
+}
+.ui-radio .ui-btn.ui-radio-on:after {
+	background-image: none;
+	background-color: #fff;
+	width: 8px;
+	height: 8px;
+	border-width: 5px;
+	border-style: solid; 
+}
+.ui-alt-icon.ui-btn.ui-radio-on:after,
+.ui-alt-icon .ui-btn.ui-radio-on:after {
+	background-color: #000;
+}
+/* Loader */
+.ui-icon-loading {
+	background: url(images/ajax-loader.gif);
+	background-size: 2.875em 2.875em;
+}
+
+
+/* I
+-----------------------------------------------------------------------------------------------------------*/
+/* Bar: Toolbars, dividers, slider track */
+.ui-bar-i,
+.ui-page-theme-i .ui-bar-inherit,
+html .ui-bar-i .ui-bar-inherit,
+html .ui-body-i .ui-bar-inherit,
+html body .ui-group-theme-i .ui-bar-inherit {
+	background: #1e1e1e /*{i-bar-background-color}*/;
+	border-color: #2a2a2a /*{i-bar-border}*/;
+	color: #ffffff /*{i-bar-color}*/;
+	text-shadow: 0 /*{i-bar-shadow-x}*/ 1px /*{i-bar-shadow-y}*/ 0 /*{i-bar-shadow-radius}*/ #444444 /*{i-bar-shadow-color}*/;
+	font-weight: bold;
+}
+.ui-bar-i {
+	border-width: 1px;
+	border-style: solid;
+}
+/* Page and overlay */
+.ui-overlay-i,
+.ui-page-theme-i,
+.ui-page-theme-i .ui-panel-wrapper {
+	background: #b0b0b0 /*{i-page-background-color}*/;
+	border-color: #b0b0b0 /*{i-page-border}*/;
+	color: #000000 /*{i-page-color}*/;
+	text-shadow: 0 /*{i-page-shadow-x}*/ 1px /*{i-page-shadow-y}*/ 0 /*{i-page-shadow-radius}*/ #eeeeee /*{i-page-shadow-color}*/;
+}
+/* Body: Read-only lists, text inputs, collapsible content */
+.ui-body-i,
+.ui-page-theme-i .ui-body-inherit,
+html .ui-bar-i .ui-body-inherit,
+html .ui-body-i .ui-body-inherit,
+html body .ui-group-theme-i .ui-body-inherit,
+html .ui-panel-page-container-i {
+	background: #d1d1d1 /*{i-body-background-color}*/;
+	border-color: #727272 /*{i-body-border}*/;
+	color: #000000 /*{i-body-color}*/;
+	text-shadow: 0 /*{i-body-shadow-x}*/ 1px /*{i-body-shadow-y}*/ 0 /*{i-body-shadow-radius}*/ #eeeeee /*{i-body-shadow-color}*/;
+}
+.ui-body-i {
+	border-width: 1px;
+	border-style: solid;
+}
+/* Links */
+.ui-page-theme-i a,
+html .ui-bar-i a,
+html .ui-body-i a,
+html body .ui-group-theme-i a {
+	color: #000000 /*{i-link-color}*/;
+	font-weight: bold;
+}
+.ui-page-theme-i a:visited,
+html .ui-bar-i a:visited,
+html .ui-body-i a:visited,
+html body .ui-group-theme-i a:visited {
+    color: #000000 /*{i-link-visited}*/;
+}
+.ui-page-theme-i a:hover,
+html .ui-bar-i a:hover,
+html .ui-body-i a:hover,
+html body .ui-group-theme-i a:hover {
+	color: #454545 /*{i-link-hover}*/;
+}
+.ui-page-theme-i a:active,
+html .ui-bar-i a:active,
+html .ui-body-i a:active,
+html body .ui-group-theme-i a:active {
+	color: #000000 /*{i-link-active}*/;
+}
+/* Button up */
+.ui-page-theme-i .ui-btn,
+html .ui-bar-i .ui-btn,
+html .ui-body-i .ui-btn,
+html body .ui-group-theme-i .ui-btn,
+html head + body .ui-btn.ui-btn-i,
+/* Button visited */
+.ui-page-theme-i .ui-btn:visited,
+html .ui-bar-i .ui-btn:visited,
+html .ui-body-i .ui-btn:visited,
+html body .ui-group-theme-i .ui-btn:visited,
+html head + body .ui-btn.ui-btn-i:visited {
+	background: #3f3f3f /*{i-bup-background-color}*/;
+	border-color: #585858 /*{i-bup-border}*/;
+	color: #ffffff /*{i-bup-color}*/;
+	text-shadow: 0 /*{i-bup-shadow-x}*/ 1px /*{i-bup-shadow-y}*/ 0 /*{i-bup-shadow-radius}*/ #444444 /*{i-bup-shadow-color}*/;
+}
+/* Button hover */
+.ui-page-theme-i .ui-btn:hover,
+html .ui-bar-i .ui-btn:hover,
+html .ui-body-i .ui-btn:hover,
+html body .ui-group-theme-i .ui-btn:hover,
+html head + body .ui-btn.ui-btn-i:hover {
+	background: #484848 /*{i-bhover-background-color}*/;
+	border-color: #646464 /*{i-bhover-border}*/;
+	color: #ffffff /*{i-bhover-color}*/;
+	text-shadow: 0 /*{i-bhover-shadow-x}*/ 1px /*{i-bhover-shadow-y}*/ 0 /*{i-bhover-shadow-radius}*/ #444444 /*{i-bhover-shadow-color}*/;
+}
+/* Button down */
+.ui-page-theme-i .ui-btn:active,
+html .ui-bar-i .ui-btn:active,
+html .ui-body-i .ui-btn:active,
+html body .ui-group-theme-i .ui-btn:active,
+html head + body .ui-btn.ui-btn-i:active {
+	background: #484848 /*{i-bdown-background-color}*/;
+	border-color: #646464 /*{i-bdown-border}*/;
+	color: #ffffff /*{i-bdown-color}*/;
+	text-shadow: 0 /*{i-bdown-shadow-x}*/ 1px /*{i-bdown-shadow-y}*/ 0 /*{i-bdown-shadow-radius}*/ #444444 /*{i-bdown-shadow-color}*/;
+}
+/* Active button */
+.ui-page-theme-i .ui-btn.ui-btn-active,
+html .ui-bar-i .ui-btn.ui-btn-active,
+html .ui-body-i .ui-btn.ui-btn-active,
+html body .ui-group-theme-i .ui-btn.ui-btn-active,
+html head + body .ui-btn.ui-btn-i.ui-btn-active,
+/* Active checkbox icon */
+.ui-page-theme-i .ui-checkbox-on:after,
+html .ui-bar-i .ui-checkbox-on:after,
+html .ui-body-i .ui-checkbox-on:after,
+html body .ui-group-theme-i .ui-checkbox-on:after,
+.ui-btn.ui-checkbox-on.ui-btn-i:after,
+/* Active flipswitch background */
+.ui-page-theme-i .ui-flipswitch-active,
+html .ui-bar-i .ui-flipswitch-active,
+html .ui-body-i .ui-flipswitch-active,
+html body .ui-group-theme-i .ui-flipswitch-active,
+html body .ui-flipswitch.ui-bar-i.ui-flipswitch-active,
+/* Active slider track */
+.ui-page-theme-i .ui-slider-track .ui-btn-active,
+html .ui-bar-i .ui-slider-track .ui-btn-active,
+html .ui-body-i .ui-slider-track .ui-btn-active,
+html body .ui-group-theme-i .ui-slider-track .ui-btn-active,
+html body div.ui-slider-track.ui-body-i .ui-btn-active {
+	background-color: #8a8a8a /*{i-active-background-color}*/;
+	border-color: #4b4b4b /*{i-active-border}*/;
+	color: #ffffff /*{i-active-color}*/;
+	text-shadow: 0 /*{i-active-shadow-x}*/ 1px /*{i-active-shadow-y}*/ 0 /*{i-active-shadow-radius}*/ #444444 /*{i-active-shadow-color}*/;
+}
+/* Active radio button icon */
+.ui-page-theme-i .ui-radio-on:after,
+html .ui-bar-i .ui-radio-on:after,
+html .ui-body-i .ui-radio-on:after,
+html body .ui-group-theme-i .ui-radio-on:after,
+.ui-btn.ui-radio-on.ui-btn-i:after {
+	border-color: #8a8a8a /*{i-active-background-color}*/;
+}
+/* Focus */
+.ui-page-theme-i .ui-btn:focus,
+html .ui-bar-i .ui-btn:focus,
+html .ui-body-i .ui-btn:focus,
+html body .ui-group-theme-i .ui-btn:focus,
+html head + body .ui-btn.ui-btn-i:focus,
+/* Focus buttons and text inputs with div wrap */
+.ui-page-theme-i .ui-focus,
+html .ui-bar-i .ui-focus,
+html .ui-body-i .ui-focus,
+html body .ui-group-theme-i .ui-focus,
+html head + body .ui-btn-i.ui-focus,
+html head + body .ui-body-i.ui-focus {
+	-webkit-box-shadow: 0 0 12px #8a8a8a /*{i-active-background-color}*/;
+	-moz-box-shadow: 0 0 12px #8a8a8a /*{i-active-background-color}*/;
+	box-shadow: 0 0 12px #8a8a8a /*{i-active-background-color}*/;
+}

@@ -1,0 +1,111 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 19-nov-2013, 10:46:43
+    Author     : Jordy
+*/
+.chosenImg{
+    border: 3px #006837 solid;
+}
+
+.imagesSelecteren{margin: 3px; padding: 1px;}
+.ui-block-b p{
+
+text-align: center;
+
+ 
+}
+#border{
+    margin-left:2%;
+    padding:1%;
+    border-width: 1px;
+    border-style:solid;
+    border-color:black;
+    -webkit-border-radius: 15px;
+-moz-border-radius: 15px;
+border-radius: 15px;
+
+}
+label.error {
+    float: none;
+    color: red;
+    padding-left: .5em;
+    vertical-align: top;
+    display: block;
+}
+
+#popupMenu-popup{
+    width: 80%;
+    left: 10%;
+    right: 10%;
+}
+.blurredImg{
+     -webkit-filter: blur(6px);
+     -moz-filter: blur(6px);
+     -o-filter: blur(6px);
+     -ms-filter: blur(6px);
+     filter: blur(6px);   
+     margin-left: auto;
+    margin-right: auto;
+}
+#imgContainer{
+    min-width:50%;
+}
+.afbeeldingenRoute img{
+    max-width:20%;
+    max-height:20%;
+}
+.ui-block-a,
+.ui-block-b {
+    width: 100%;   
+}
+
+@media all and (min-width: 42em) {
+    .ui-block-a {    
+      width: 100%;
+    }
+    .ui-block-b {    
+      width: 100%;
+    }
+}
+
+@media all and (min-width: 55em) {
+    .ui-block-a{
+      width: 48.95%;
+    }
+    .ui-block-b{
+      width: 48.95%;
+    }
+}
+
+@media all and (min-width: 75em) {
+
+     .ui-block-a {
+      width: 49.95%;
+    }
+    .ui-block-b{
+      width: 49.95%;
+    }
+}
+.finishedIcon{
+    max-width: 2%;
+    max-height: 2%;
+}
+.finishedObject{
+    max-width: 2%;
+    max-height: 2%;
+    padding-left: 0.5%;
+}
+.ui-mobile .ui-page .ui-content .ui-collapsible .ui-collapsible-heading .ui-btn-text {
+    white-space : normal;
+}​
+
+
+
+
+
+
+
